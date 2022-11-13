@@ -7,6 +7,13 @@ import {
   CognitoUserList,
   CognitoUserShow,
 } from "react-admin-amplify";
+
+import {
+  TemplateList,
+  TemplateCreate,
+  TemplateEdit,
+  TemplateShow,
+} from "./components/Template"
 import awsExports from "./aws-exports";
 import * as mutations from "./graphql/mutations";
 import * as queries from "./graphql/queries";
@@ -25,7 +32,11 @@ function App() {
 
       <Resource name="templates" 
       options={{ label: "Templates" }}
-      />
+            list={TemplateList}
+            show={TemplateShow}
+            edit={TemplateEdit}
+            create={TemplateCreate}
+          />
       <Resource
         name="cognitoUsers"
         options={{ label: "Cognito Users" }}

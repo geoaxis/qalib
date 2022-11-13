@@ -27,8 +27,7 @@ export const TemplateList = (props) => {
       <Datagrid>
         <TextField
           source="id"
-          sortBy={query}
-          sortable={query === "templatesByName"}
+          sortable={false}
         />
         <TextField source="name" sortable={false} />
         <DateField source="createdAt" sortable={false} />
@@ -78,7 +77,7 @@ export const TemplateCreate = (props) => (
   <Create {...props}>
     <SimpleForm>
       <TextInput source="name" validate={validateName} />
-      <TextInput source="name" validate={validateTemplate} />
+      <TextInput source="template" validate={validateTemplate} />
     </SimpleForm>
   </Create>
 );
