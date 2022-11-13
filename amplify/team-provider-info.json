@@ -23,7 +23,14 @@
         }
       },
       "api": {
-        "qalib": {}
+        "qalib": {},
+        "AdminQueries": {}
+      },
+      "function": {
+        "AdminQueries5f636b21": {
+          "deploymentBucketName": "amplify-qalib-dev-133129-deployment",
+          "s3Key": "amplify-builds/AdminQueries5f636b21-77515876615772494668-build.zip"
+        }
       }
     }
   }

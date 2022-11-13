@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+// in App.js
+import { Amplify } from "aws-amplify";
+import { Resource } from "react-admin";
+import {
+  AmplifyAdmin,
+  CognitoGroupList,
+  CognitoUserList,
+  CognitoUserShow,
+} from "react-admin-amplify";
+import awsExports from "./aws-exports";
+import * as mutations from "./graphql/mutations";
+import * as queries from "./graphql/queries";
+
+Amplify.configure(awsExports);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AmplifyAdmin
+      operations={{ queries, mutations }}
+      options={{
+        authGroups: ["admins"],
+        enableAdminQueries: true,
+      }}
+    >
+
+      <Resource name="templates" 
+      options={{ label: "Templates" }}
+      />
+      <Resource
+        name="cognitoUsers"
+        options={{ label: "Cognito Users" }}
+        list={CognitoUserList}
+        show={CognitoUserShow}
+      />
+      <Resource
+        name="cognitoGroups"
+        options={{ label: "Cognito Groups" }}
+        list={CognitoGroupList}
+      />
+    </AmplifyAdmin>
   );
 }
 
