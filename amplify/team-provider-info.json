@@ -13,13 +13,17 @@
     },
     "categories": {
       "auth": {
-        "qalibccad56a6": {}
+        "qalibccad56a6": {},
+        "userPoolGroups": {}
       },
       "hosting": {
         "amplifyhosting": {
           "appId": "dxsdhamzs95ao",
           "type": "cicd"
         }
+      },
+      "api": {
+        "qalib": {}
       }
     }
   }

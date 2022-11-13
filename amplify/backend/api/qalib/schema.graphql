@@ -1,7 +1,7 @@
 type Template
   @model
   @auth(rules: [
-    { allow: groups, groups: ["admin"] }
+    { allow: groups, groups: ["admins"] }
   ]){
   id: ID!
   name: String!
