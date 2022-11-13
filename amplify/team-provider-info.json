@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-qalib-dev-133129-authRole",
+      "UnauthRoleArn": "arn:aws:iam::518912499641:role/amplify-qalib-dev-133129-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::518912499641:role/amplify-qalib-dev-133129-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-qalib-dev-133129-deployment",
+      "UnauthRoleName": "amplify-qalib-dev-133129-unauthRole",
+      "StackName": "amplify-qalib-dev-133129",
+      "StackId": "arn:aws:cloudformation:eu-west-1:518912499641:stack/amplify-qalib-dev-133129/19e074e0-634f-11ed-9dc1-0a1943a21e3d",
+      "AmplifyAppId": "dxsdhamzs95ao"
+    }
+  }
+}
