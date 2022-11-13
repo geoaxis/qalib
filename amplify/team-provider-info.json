@@ -10,6 +10,17 @@
       "StackName": "amplify-qalib-dev-133129",
       "StackId": "arn:aws:cloudformation:eu-west-1:518912499641:stack/amplify-qalib-dev-133129/19e074e0-634f-11ed-9dc1-0a1943a21e3d",
       "AmplifyAppId": "dxsdhamzs95ao"
+    },
+    "categories": {
+      "auth": {
+        "qalibccad56a6": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dxsdhamzs95ao",
+          "type": "cicd"
+        }
+      }
     }
   }
 }

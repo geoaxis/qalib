@@ -1,0 +1,9 @@
+type Template
+  @model
+  @auth(rules: [
+    { allow: groups, groups: ["admin"] }
+  ]){
+  id: ID!
+  name: String!
+  template: String!
+}
