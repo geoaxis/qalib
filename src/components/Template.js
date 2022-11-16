@@ -67,7 +67,7 @@ export const TemplateEdit = (props) => (
     <SimpleForm>
       <TextInput source="id" disabled />
       <TextInput source="name" validate={validateName} />
-      <TextInput source="template" validate={validateName} />
+      <TextInput multiline source="template" validate={validateTemplate} />
 
     </SimpleForm>
   </Edit>
